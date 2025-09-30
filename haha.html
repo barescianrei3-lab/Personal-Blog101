@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fullbright College Blog</title>
+  <style> 
+    /* Make page fill full screen and responsive */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header, footer {
+  background: #333;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 1em;
+  text-decoration: none;
+}
+
+main {
+  flex: 1;
+  padding: 2em;
+  text-align: center;
+}
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive text & layout for smaller screens */
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 0.5em 0;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/logo.jpg" alt="Logo of Fullbright College">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <p>Hi, We are students of <strong>Fullbright College</strong>. We built this blog to share a bit about ourselves and interests.</p>
+  </main>
+
+  <footer>
+    <p>©2025 Fullbright College | Designed by Students</p>
+  </footer>
+
+</body>
+</html>
